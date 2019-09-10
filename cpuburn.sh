@@ -6,11 +6,12 @@ url="cryptonightr.usa-new.nicehash.com:3375"
 
 cd /root/cpuburn/
 
+cat /proc/cpuinfo | grep "model name" | head -1
 echo $username
 #echo $url
 echo Burn in progress...
 echo "Ctrl + C to abort"
 
 #Execute CPU burn-in test
-#./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=40 &> /dev/null
-./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=40 | grep speed
+#./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=40 --print-time=500 &> /dev/null
+./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=40 --print-time=500 | grep speed

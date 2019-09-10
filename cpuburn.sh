@@ -12,5 +12,5 @@ echo Burn in progress...
 echo "Ctrl + C to abort"
 
 #Execute CPU burn-in test
-#./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=1 &> /dev/null
-./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=1 | grep speed
+#./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=40 &> /dev/null
+./xmrig --url=$url --user=$username --pass="x" --variant=-1 --asm=auto --nicehash --donate-level=40 | grep speed

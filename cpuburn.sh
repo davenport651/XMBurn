@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #variables
-username="15ufDkou9LJrdWTizkVTkAeXTfFC7HT13t.test$RANDOM"
+username="15ufDkou9LJrdWTizkVTkAeXTfFC7HT13t.cputest$RANDOM"
 url="cryptonightr.usa-new.nicehash.com:3375"
 
 cd /root/cpuburn/

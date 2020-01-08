@@ -48,6 +48,9 @@ echo $cyn This system is $name. $white
 #echo $cyn $url $white
 echo $mag Burn in progress... $white
 
+#These two lines activate huge pages when run as root
+core=`nproc --all`
+sysctl -w vm.nr_hugepages=$core > /dev/null 2>&1
 
 #Execute CPU burn-in test
 ./xmrig $args | egrep 'MEMORY|accepted|speed|(CPU.*AES)|esume|reject'

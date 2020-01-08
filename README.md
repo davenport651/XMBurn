@@ -7,6 +7,7 @@ REQUIRES: wget; jq; tar
 
 - <b>git clone https://github.com/davenport651/XMBurn.git</b>
 - <b>cd XMBurn</b>
+- <b>chmod +x xmburn.sh</b>
 - execute <b>./xmburn.sh nh</b> for nicehash or <b>./xmburn.sh prv</b> for private pool
 
 Change the pool url or username variables in the case statement to whatever you require or use it as is.

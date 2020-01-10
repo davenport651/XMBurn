@@ -3,7 +3,9 @@ A bash shell script that downloads and executes xmrig miner with some pre-set co
 
 REQUIRES: wget; jq; tar
 - On Ubuntu: <b>sudo apt install wget jq tar</b>
-- On RHEL/Cent: <b>yum install wget jq tar</b>
+- On RHEL/Cent: 
+--<b>yum install epel-release</b>
+--<b>yum install wget jq tar</b>
 
 - <b>git clone https://github.com/davenport651/XMBurn.git</b>
 - <b>cd XMBurn</b>

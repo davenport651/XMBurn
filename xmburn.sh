@@ -20,7 +20,7 @@ case "$1" in
         nh)
             username="15ufDkou9LJrdWTizkVTkAeXTfFC7HT13t.$name"
 	    url="randomxmonero.usa.nicehash.com:3380"
-	    args="--coin="monero" --url=$url --user=$username --pass="x" --nicehash --randomx-1gb-pages --donate-level=40 --print-time=500"
+	    args="--coin="monero" --url=$url --user=$username --pass="x" --nicehash --randomx-1gb-pages --donate-level=40 --print-time=500 --av=0"
             ;;
 	prv)
 	    username="45ynYARcmKcLZrB1kEfjsbCcGByjVqsCnhzAgLpN1xjnTzxRRp8F7tq3bXbnrW929mdRcyBSAHNTzjHap4Wgbc8FTWRaut9"

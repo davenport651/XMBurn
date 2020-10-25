@@ -12,7 +12,7 @@ if  ! wget -q --spider http://github.com || ! wget -q --spider http://nicehash.c
 fi
 if [ ! -f "xmrig" ] ; then
   xmrig_url=$(curl -s https://api.github.com/repos/davenport651/xmrig/releases | jq -r '.[] | .assets[] as $t | [$t.browser_download_url] | @tsv' | head -n 1)
-  wget -q -O - $xmrig_url #| tar --wildcards -xz xmrig*/xmrig --strip-components 1
+  wget -q -O $xmrig_url #| tar --wildcards -xz xmrig*/xmrig --strip-components 1
 fi
 
 #This section defines wallets and pool URLs

@@ -29,11 +29,11 @@ case "$1" in
 	    ;;
 	update)
 	  rm -f xmrig
-	  ./$0 $2
+	  $0 $2
 	  exit 0
 	  ;;
 	"")
-	  ./$0 nh
+	  $0 nh
 	  exit 0
 	  ;;
         *)

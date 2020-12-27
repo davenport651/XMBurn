@@ -25,8 +25,8 @@ case "$1" in
             ;;
 	prv)
 	    username="45ynYARcmKcLZrB1kEfjsbCcGByjVqsCnhzAgLpN1xjnTzxRRp8F7tq3bXbnrW929mdRcyBSAHNTzjHap4Wgbc8FTWRaut9"
-	    url="pool.supportxmr.com:5555"
-	    args="--coin="monero" --url=$url --user=$username --pass="$name" --randomx-1gb-pages --keepalive --donate-level=40 --print-time=500"
+	    url="pool.supportxmr.com:9000"
+	    args="--coin="monero" --url=$url --user=$username --pass="$name" --randomx-1gb-pages --keepalive --donate-level=40 --tls --print-time=500"
 	    ;;
 	update)
 	  rm -f xmrig
